@@ -25,23 +25,23 @@ F 3 "" H 8850 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R17
+L Device:R R15
 U 1 1 5B8D218B
 P 9350 4650
-F 0 "R17" V 9350 4650 50  0000 C CNN
-F 1 "4.87k" V 9250 4650 50  0000 C CNN
+F 0 "R15" V 9350 4650 50  0000 C CNN
+F 1 "16.2k" V 9250 4650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9280 4650 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 9350 4650 50  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-8ENF4871V/P4-87KFCT-ND/89784" V 9350 4650 50  0001 C CNN "Link"
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 9350 4650 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB1622V/P16-2KBCCT-ND/3069603" V 9350 4650 50  0001 C CNN "Link"
 F 5 "0.25W" V 9350 4650 50  0001 C CNN "Power"
 	1    9350 4650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R15
+L Device:R R13
 U 1 1 5BF7D40A
 P 9350 3500
-F 0 "R15" V 9350 3500 50  0000 C CNN
+F 0 "R13" V 9350 3500 50  0000 C CNN
 F 1 "2M" V 9250 3500 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9280 3500 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 9350 3500 50  0001 C CNN
@@ -66,17 +66,6 @@ $EndComp
 Connection ~ 4250 1400
 Wire Wire Line
 	4250 1700 4250 1400
-$Comp
-L power:GND #PWR0103
-U 1 1 5B8A2A9D
-P 4700 1700
-F 0 "#PWR0103" H 4700 1450 50  0001 C CNN
-F 1 "GND" H 4705 1527 50  0000 C CNN
-F 2 "" H 4700 1700 50  0001 C CNN
-F 3 "" H 4700 1700 50  0001 C CNN
-	1    4700 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5B8A25E9
@@ -124,10 +113,10 @@ F 3 "" H 3550 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C7
+L Device:CP C6
 U 1 1 5B89C0FF
 P 3550 1550
-F 0 "C7" H 3668 1596 50  0000 L CNN
+F 0 "C6" H 3668 1596 50  0000 L CNN
 F 1 "1000uF" H 3668 1505 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 3588 1400 50  0001 C CNN
 F 3 "http://nichicon-us.com/english/products/pdfs/e-upw.pdf" H 3550 1550 50  0001 C CNN
@@ -233,10 +222,10 @@ F 3 "" H 1800 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L Device:R R7
 U 1 1 5B8AB6B4
 P 3050 3500
-F 0 "R9" V 3050 3500 50  0000 C CNN
+F 0 "R7" V 3050 3500 50  0000 C CNN
 F 1 "100k" V 2950 3500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2980 3500 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 3050 3500 50  0001 C CNN
@@ -297,20 +286,6 @@ $EndComp
 Connection ~ 3200 3900
 Wire Wire Line
 	3200 3900 3200 3950
-$Comp
-L Device:R R4
-U 1 1 5B8C18DC
-P 4450 4850
-F 0 "R4" V 4450 4850 50  0000 C CNN
-F 1 "681" V 4350 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 4850 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 4450 4850 50  0001 C CNN
-F 4 "use 681 if using Vout comparitor as backup protection while in regulation mode, 787 if using Vout comparitor directly as trip in chage mode " V 4450 4850 50  0001 C CNN "Note"
-F 5 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-3AEB6810V/P681DBCT-ND/3076036" V 4450 4850 50  0001 C CNN "681 Link"
-F 6 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-3AEB7870V/P787DBCT-ND/3076056" V 4450 4850 50  0001 C CNN "787 Link"
-	1    4450 4850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 5B8C1AD0
@@ -503,6 +478,7 @@ F 0 "J3" H 9800 2600 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 10050 2500 50  0000 C CNN
 F 2 "Connector:Banana_Jack_2Pin" H 9800 2800 50  0001 C CNN
 F 3 "~" H 9800 2800 50  0001 C CNN
+F 4 "300V" H 9800 2800 50  0001 C CNN "Voltage"
 	1    9800 2800
 	1    0    0    1   
 $EndComp
@@ -515,7 +491,7 @@ F 1 "2200pF" H 8965 1955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1812_4532Metric" H 8888 1850 50  0001 C CNN
 F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GR443QR73D222KW01-01.pdf" H 8850 2000 50  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/murata-electronics/GR443QR73D222KW01L/490-6107-1-ND/3845307" H 8850 2000 50  0001 C CNN "Link"
-F 5 ">1200V" H 8850 2000 50  0001 C CNN "Voltage"
+F 5 ">500V" H 8850 2000 50  0001 C CNN "Voltage"
 	1    8850 2000
 	1    0    0    -1  
 $EndComp
@@ -607,10 +583,10 @@ Vtrans
 Connection ~ 5500 3650
 Connection ~ 5500 3950
 $Comp
-L Device:R R11
+L Device:R R9
 U 1 1 5F25583E
 P 3550 3850
-F 0 "R11" V 3550 3850 50  0000 C CNN
+F 0 "R9" V 3550 3850 50  0000 C CNN
 F 1 "453k" V 3500 3650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 3850 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 3550 3850 50  0001 C CNN
@@ -619,22 +595,10 @@ F 4 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/E
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R13
-U 1 1 5F256A06
-P 3550 4100
-F 0 "R13" V 3550 4100 50  0000 C CNN
-F 1 "169k" V 3500 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 4100 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 3550 4100 50  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-6AEB1693V/P169KDACT-ND/3074985" V 3550 4100 50  0001 C CNN "Link"
-	1    3550 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R14
+L Device:R R11
 U 1 1 5F25786F
 P 3550 3950
-F 0 "R14" V 3550 3950 50  0000 C CNN
+F 0 "R11" V 3550 3950 50  0000 C CNN
 F 1 "1.3M" V 3500 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 3950 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 3550 3950 50  0001 C CNN
@@ -680,49 +644,11 @@ F 5 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/E
 	1    5700 3800
 	1    0    0    -1  
 $EndComp
-Connection ~ 5700 3650
-Wire Wire Line
-	5700 3650 5900 3650
-Connection ~ 5700 3950
-Wire Wire Line
-	5700 3950 5900 3950
-$Comp
-L Device:R R7
-U 1 1 5F2F75EA
-P 5900 3800
-F 0 "R7" V 5900 3800 50  0000 C CNN
-F 1 "4m" V 5800 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 5830 3800 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C319.pdf" H 5900 3800 50  0001 C CNN
-F 4 ">2.5W" V 5900 3800 50  0001 C CNN "Power"
-F 5 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-MS4SF4M0U/P17092CT-ND/5357993" V 5900 3800 50  0001 C CNN "Link"
-	1    5900 3800
-	1    0    0    -1  
-$EndComp
-Connection ~ 5900 3650
-Wire Wire Line
-	5900 3650 6100 3650
-Connection ~ 5900 3950
-Wire Wire Line
-	5900 3950 6100 3950
 $Comp
 L Device:R R8
-U 1 1 5F2F7D26
-P 6100 3800
-F 0 "R8" V 6100 3800 50  0000 C CNN
-F 1 "4m" V 6000 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 6030 3800 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C319.pdf" H 6100 3800 50  0001 C CNN
-F 4 ">2.5W" V 6100 3800 50  0001 C CNN "Power"
-F 5 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-MS4SF4M0U/P17092CT-ND/5357993" V 6100 3800 50  0001 C CNN "Link"
-	1    6100 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
 U 1 1 5F2F9FC0
 P 3050 3600
-F 0 "R10" V 3050 3600 50  0000 C CNN
+F 0 "R8" V 3050 3600 50  0000 C CNN
 F 1 "100k" V 3150 3600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2980 3600 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 3050 3600 50  0001 C CNN
@@ -731,10 +657,10 @@ F 4 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/E
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R12
+L Device:R R10
 U 1 1 5F2FBE74
 P 3550 4200
-F 0 "R12" V 3550 4200 50  0000 C CNN
+F 0 "R10" V 3550 4200 50  0000 C CNN
 F 1 "453k" V 3500 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 4200 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 3550 4200 50  0001 C CNN
@@ -745,10 +671,10 @@ $EndComp
 Wire Wire Line
 	9350 3650 9350 3750
 $Comp
-L Device:R R16
+L Device:R R14
 U 1 1 5F2FE525
 P 9350 3900
-F 0 "R16" V 9350 3900 50  0000 C CNN
+F 0 "R14" V 9350 3900 50  0000 C CNN
 F 1 "2M" V 9250 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9280 3900 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 9350 3900 50  0001 C CNN
@@ -785,52 +711,7 @@ $EndComp
 Connection ~ 2000 3300
 Wire Wire Line
 	2000 3300 2500 3300
-Wire Wire Line
-	4250 1400 4700 1400
-$Comp
-L Device:C C6
-U 1 1 5F3074B6
-P 4700 1550
-F 0 "C6" H 4815 1596 50  0000 L CNN
-F 1 "10uF" H 4815 1505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 4738 1400 50  0001 C CNN
-F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01.pdf" H 4700 1550 50  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/murata-electronics/GRM32EC72A106KE05L/490-16266-1-ND/7319356" H 4700 1550 50  0001 C CNN "Link"
-	1    4700 1550
-	1    0    0    -1  
-$EndComp
-Connection ~ 4700 1400
-Wire Wire Line
-	4700 1400 5150 1400
 Connection ~ 3550 1400
-$Comp
-L power:GND #PWR0117
-U 1 1 5F314732
-P 2900 1700
-F 0 "#PWR0117" H 2900 1450 50  0001 C CNN
-F 1 "GND" H 2905 1527 50  0000 C CNN
-F 2 "" H 2900 1700 50  0001 C CNN
-F 3 "" H 2900 1700 50  0001 C CNN
-	1    2900 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1400 2900 1400
-$Comp
-L Device:CP C8
-U 1 1 5F31535B
-P 2900 1550
-F 0 "C8" H 3018 1596 50  0000 L CNN
-F 1 "1000uF" H 3018 1505 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 2938 1400 50  0001 C CNN
-F 3 "http://nichicon-us.com/english/products/pdfs/e-upw.pdf" H 2900 1550 50  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/nichicon/UPW2A102MHD/493-1988-ND/589729" H 2900 1550 50  0001 C CNN "Link"
-	1    2900 1550
-	1    0    0    -1  
-$EndComp
-Connection ~ 2900 1400
-Wire Wire Line
-	2900 1400 3550 1400
 $Comp
 L Connector:Conn_01x02_Female J4
 U 1 1 5F32122E
@@ -940,4 +821,34 @@ Wire Wire Line
 	1900 4950 1950 4950
 Wire Wire Line
 	1950 4950 1950 5000
+$Comp
+L Device:R R4
+U 1 1 5B8C18DC
+P 4450 4850
+F 0 "R4" V 4450 4850 50  0000 C CNN
+F 1 "2.37k" V 4350 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 4850 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 4450 4850 50  0001 C CNN
+F 4 "use 2.37k if using Vout comparitor as backup protection while in regulation mode, 2.55k if using Vout comparitor directly as trip in chage mode " V 4450 4850 50  0001 C CNN "Note"
+F 5 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-3AEB2371V/P2-37KDBCT-ND/3075876" V 4450 4850 50  0001 C CNN "2.37k Link"
+F 6 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-3AEB2551V/P2-55KDBCT-ND/3075888" V 4450 4850 50  0001 C CNN "2.55k Link"
+	1    4450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5F256A06
+P 3550 4100
+F 0 "R12" V 3550 4100 50  0000 C CNN
+F 1 "169k" V 3500 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 4100 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 3550 4100 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-6AEB1693V/P169KDACT-ND/3074985" V 3550 4100 50  0001 C CNN "Link"
+	1    3550 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 1400 5150 1400
+Wire Wire Line
+	2200 1400 3550 1400
 $EndSCHEMATC
